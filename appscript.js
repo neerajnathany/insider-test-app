@@ -4,7 +4,9 @@ jQuery(document).ready(function() {
 
      $('.fun-icon').click(function() {
         $('.app-screen').css({'background':'#7D0B0B'});
-        $('.logo').fadeTo(250, 0);
+        $('.logo-contain').css({'top':'-54px'});
+        $('.logo').width('53px').height('45px');
+        $('.logo').css('background-image','url(insider-w.png)');
         $('.header-text').css({'top':'-50px'});
         $('.header-text').animate({'opacity': 0.0}, 300);
         $('.intro-sect').css({'opacity': '0','left':'-150px'});
@@ -12,7 +14,7 @@ jQuery(document).ready(function() {
         $('.comedy').css({'top':'20px','left':'32.5px','transform':'rotate(0deg)'});
         $('.comedy').next().css({'top':'140px','left':'387.5px','transform':'rotate(37.6deg)'});
         $('.comedy').fadeTo(300,1);
-        $('.comedy .answer-text').delay(280).fadeTo(60,1);
+        $('.comedy .answer-text').delay(290).fadeTo(60,1);
     });
 
 
@@ -20,10 +22,10 @@ jQuery(document).ready(function() {
         $(this).parent().prev().css({'top':'200px','left':'-680px'});
         $(this).parent().css({'top':'140px','left':'-322.5px','transform':'rotate(-37.6deg)','transition': 'left 0.3s cubic-bezier(0, 0, 0.95, 0.98), top 0.3s cubic-bezier(0.34, 0.01, 0.68, 0.37), transform 0.3s linear'});
         $(this).parent().fadeTo(300, 0.3);
-        $(this).siblings('.answer-text').fadeTo(60, 0);
+        $(this).siblings('.answer-text').fadeTo(50, 0);
         $(this).parent().next().css({'top':'20px','left':'32.5px','transform':'rotate(0deg)','transition': 'left 0.3s cubic-bezier(0.05, 0.02, 1, 1), top 0.3s cubic-bezier(0.32, 0.63, 0.66, 0.99), transform 0.3s linear'});
         $(this).parent().next().fadeTo(300, 1);
-        $(this).parent().next().children('.answer-text').delay(280).fadeTo(60,1);
+        $(this).parent().next().children('.answer-text').delay(290).fadeTo(60,1);
         $(this).parent().next().next().css({'top':'140px','left':'387.5px','transform':'rotate(37.6deg)'});
     });
 
@@ -31,7 +33,7 @@ jQuery(document).ready(function() {
         $(this).parent().prev().prev().css({'top':'140px','left':'-322.5px','transform':'rotate(-37.6deg)'});
         $(this).parent().prev().css({'top':'20px','left':'32.5px','transform':'rotate(0deg)','transition': 'left 0.3s cubic-bezier(0.05, 0.02, 1, 1), top 0.3s cubic-bezier(0.32, 0.63, 0.66, 0.99), transform 0.3s linear'});
         $(this).parent().prev().fadeTo(300, 1);
-        $(this).parent().prev().children('.answer-text').delay(280).fadeTo(60,1);
+        $(this).parent().prev().children('.answer-text').delay(290).fadeTo(60,1);
         $(this).parent().css({'top':'140px','left':'387.5px','transform':'rotate(37.6deg)','transition': 'left 0.3s cubic-bezier(0, 0, 0.95, 0.98), top 0.3s cubic-bezier(0.34, 0.01, 0.68, 0.37), transform 0.3s linear'});
         $(this).parent().fadeTo(300, 0.3);
         $(this).siblings('.answer-text').fadeTo(50, 0);

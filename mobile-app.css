@@ -97,6 +97,13 @@ table {
 	font-family: Lato;
 	color: white;
 }
+.logo-contain{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	transition: top 0.3s ease-in-out;
+
+}
 .logo{
 	width: 71px;
 	height: 60px;
@@ -106,6 +113,7 @@ table {
 	background-repeat: no-repeat;
 	animation: logo-ani 0.7s 1 ease-in-out;
 	animation-fill-mode: forwards;
+	transition: background 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 @keyframes logo-ani{
@@ -265,7 +273,7 @@ table {
 	position: absolute;
 	z-index: 1;
 	opacity: 0;
-	top: 8%;
+	top: 6%;
 	left: 0;
 	animation-fill-mode: forwards;
 	transition: opacity 0.3s ease-in-out;
@@ -331,6 +339,16 @@ table {
     transform: rotate(37.6deg);
 }
 
+.comedy .card-icon{
+	width: 54px;
+	height: 54px;
+	background: url('icons/art.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 118px;
+}
+
 .music{
 	background: url('music.jpg');
 	/*background-position: -200px;*/
@@ -341,12 +359,32 @@ table {
 	transition: left 0.3s ease-in-out;
 }
 
+.music .card-icon{
+	width: 54px;
+	height: 54px;
+	background: url('icons/devil.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 118px;
+}
+
 .getout{
 	background: url('getout.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	left: 1000px;
 	transition: left 0.3s ease-in-out;
+}
+
+.getout .card-icon{
+	width: 54px;
+	height: 54px;
+	background: url('icons/mountain.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 118px;
 }
 
 .food{
@@ -357,12 +395,32 @@ table {
 	transition: left 0.3s ease-in-out;
 }
 
+.food .card-icon{
+	width: 54px;
+	height: 54px;
+	background: url('icons/cup.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 118px;
+}
+
 .alcohol{
 	background: url('alcohol.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	left: 1600px;
 	transition: left 0.3s ease-in-out;
+}
+
+.alcohol .card-icon{
+	width: 54px;
+	height: 54px;
+	background: url('icons/drink.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 118px;
 }
 
 .do-home{
