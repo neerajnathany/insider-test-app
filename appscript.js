@@ -5,35 +5,36 @@ jQuery(document).ready(function() {
      $('.fun-icon').click(function() {
         $('.app-screen').css({'background':'#7D0B0B'});
         $('.logo').fadeTo(250, 0);
-        $('.header-text').css({'top':'-36px'});
-        $('.header-text h2').css({'opacity':'0'});
-        $('.header-text h4').css({'font-size':'28px'});
-        $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
-            $(this).text("How to lose that double chin?");
-        }).animate({'opacity': 1}, 150);
+        $('.header-text').css({'top':'-50px'});
+        $('.header-text').animate({'opacity': 0.0}, 300);
         $('.intro-sect').css({'opacity': '0','left':'-150px'});
         $('.card-list').css({'opacity': '1'});
         $('.comedy').css({'top':'20px','left':'32.5px','transform':'rotate(0deg)'});
         $('.comedy').next().css({'top':'140px','left':'387.5px','transform':'rotate(37.6deg)'});
-        $('.comedy').fadeTo(500,1);
+        $('.comedy').fadeTo(300,1);
+        $('.comedy .answer-text').delay(280).fadeTo(60,1);
     });
 
 
     $('.half.right').click(function() {
         $(this).parent().prev().css({'top':'200px','left':'-680px'});
         $(this).parent().css({'top':'140px','left':'-322.5px','transform':'rotate(-37.6deg)','transition': 'left 0.3s cubic-bezier(0, 0, 0.95, 0.98), top 0.3s cubic-bezier(0.34, 0.01, 0.68, 0.37), transform 0.3s linear'});
-        $(this).parent().fadeTo(500, 0.3);
+        $(this).parent().fadeTo(300, 0.3);
+        $(this).siblings('.answer-text').fadeTo(60, 0);
         $(this).parent().next().css({'top':'20px','left':'32.5px','transform':'rotate(0deg)','transition': 'left 0.3s cubic-bezier(0.05, 0.02, 1, 1), top 0.3s cubic-bezier(0.32, 0.63, 0.66, 0.99), transform 0.3s linear'});
-        $(this).parent().next().fadeTo(500, 1);
+        $(this).parent().next().fadeTo(300, 1);
+        $(this).parent().next().children('.answer-text').delay(280).fadeTo(60,1);
         $(this).parent().next().next().css({'top':'140px','left':'387.5px','transform':'rotate(37.6deg)'});
     });
 
     $('.half.left').click(function() {
         $(this).parent().prev().prev().css({'top':'140px','left':'-322.5px','transform':'rotate(-37.6deg)'});
         $(this).parent().prev().css({'top':'20px','left':'32.5px','transform':'rotate(0deg)','transition': 'left 0.3s cubic-bezier(0.05, 0.02, 1, 1), top 0.3s cubic-bezier(0.32, 0.63, 0.66, 0.99), transform 0.3s linear'});
-        $(this).parent().prev().fadeTo(500, 1);
+        $(this).parent().prev().fadeTo(300, 1);
+        $(this).parent().prev().children('.answer-text').delay(280).fadeTo(60,1);
         $(this).parent().css({'top':'140px','left':'387.5px','transform':'rotate(37.6deg)','transition': 'left 0.3s cubic-bezier(0, 0, 0.95, 0.98), top 0.3s cubic-bezier(0.34, 0.01, 0.68, 0.37), transform 0.3s linear'});
-        $(this).parent().fadeTo(500, 0.3);
+        $(this).parent().fadeTo(300, 0.3);
+        $(this).siblings('.answer-text').fadeTo(50, 0);
         $(this).parent().next().css({'top':'200px','left':'742.5px'});
     });
 
