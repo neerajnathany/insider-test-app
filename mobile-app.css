@@ -270,7 +270,7 @@ table {
 	position: absolute;
 	z-index: 1;
 	opacity: 0;
-	top: 6%;
+	top: 8%;
 	left: 0;
 	animation-fill-mode: forwards;
 	transition: opacity 0.3s ease-in-out;
@@ -298,15 +298,27 @@ table {
 
 .cards .answer-text{
 	position: absolute;
-    width: 100%;
-    top: 115%;
-    left: 0;
-    font-size: 19px;
+    width: 68%;
+    top: 120%;
+    left: 140px;
+    text-align: left;
+    font-size: 17px;
     font-weight: 600;
-    line-height: 36px;
-    padding: 0 24px;
+    line-height: 32px;
+    padding: 0 16px;
     opacity: 0;
 }
+
+.cards .answer-text.monkey{
+    top: 117%;
+    left: 15px;
+    width: 116px;
+    height: 116px;
+    background: url('monkey.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 .half{
 	position: absolute;
