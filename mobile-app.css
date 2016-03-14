@@ -266,9 +266,6 @@ table {
 	100%{opacity: 0;left: 242px;}
 }
 
-
-
-
 .card-list{
 	position: absolute;
 	z-index: 1;
@@ -424,75 +421,25 @@ table {
 }
 
 .do-home{
-	width:405px;
-	height: 640px;
-	left: 1900px;
-	opacity: 0;
-	box-shadow: none;
-	padding: 0;
-	border-radius: 0;
+	background: url('do-home.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	left: 1600px;
 	transition: left 0.3s ease-in-out;
 }
+
+.do-home .card-icon{
+	width: 54px;
+	height: 54px;
+	background: url('icons/sofa.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	margin-top: 118px;
+}
+
 .do-home::after{
 	content: none;
-}
-
-.do-home .left, .do-home .right{
-	height: 640px;
-}
-
-.home-header{
-	width: 100%;
-	height: 240px;
-	background: url('do-home.jpg');
-	background-size: 115%;
-	background-repeat: no-repeat;
-}
-
-.home-answer{
-	position: absolute;
-	top: -80px;
-}
-
-.option-list{
-	width: 100%;
-	height: 400px;
-	padding: 14px;
-	overflow: scroll;
-}
-
-.each-card{
-	width: 100%;
-	height: 290px;
-	background: white;
-	margin-bottom: 14px;
-	border-radius: 2px;
-	box-shadow: 0 2px 6px -1px #ccc;
-}
-
-.card-image{
-	width: 100%;
-	height: 209px;
-	background: url('aib.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.card-image.second{
-	background: url('eic.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.card-details{
-	padding: 12px 14px;
-	color: black;
-	font-family:Museo Sans;
-}
-.card-details span{
-	float: left;
-	width: 100%;
-	display: block;
-	margin-bottom: 7px;
-	text-align: left;
 }
 
 .app-below{

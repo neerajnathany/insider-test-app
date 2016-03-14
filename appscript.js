@@ -82,7 +82,6 @@ jQuery(document).ready(function() {
         $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
             $(this).text("Need a new hobby?");
         }).animate({'opacity': 1}, 150);
-        $(this).parent().next().next().css({'top':'-164px','left':'420px','transform':'rotate(0deg)'});
     });
     $('.alcohol .left').click(function() {
         $('.app-screen').css({'background':'#852905'});
@@ -91,18 +90,16 @@ jQuery(document).ready(function() {
         }).animate({'opacity': 1}, 150);
     });
     $('.alcohol .right').click(function() {
-        $('.app-screen').css({'background':'white'});
-        $('.header-text h4').animate({'opacity': 0}, 150);
-        $(this).parent().fadeTo(100, 0);
-        $(this).parent().next().css({'top':'-164px','left':'0'});
+        $('.app-screen').css({'background':'#666350'});
+        $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
+            $(this).text("Need a new hobby?");
+        }).animate({'opacity': 1}, 150);
     });
     $('.do-home .left').click(function(){
         $('.app-screen').css({'background':'#C5A175'});
-        $(this).parent().fadeTo(300, 0);
-        $('.header-text h4').animate({'opacity': 1}, 300, function () {
-            $(this).text("Need a new hobby?");
-        });
-        $(this).parent().css({'top':'-164px','left':'420px','transform':'rotate(0deg)','transition': 'left 0.3s cubic-bezier(0, 0, 0.95, 0.98), top 0.3s cubic-bezier(0.34, 0.01, 0.68, 0.37), transform 0.3s linear'});
+        $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
+            $(this).text("Gluttony is a sin");
+        }).animate({'opacity': 1}, 150);
     });
 
 });
