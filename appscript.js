@@ -18,12 +18,19 @@ jQuery(document).ready(function() {
     });
 
      $('.half.bottom').click(function() {
-        $(this).parent().css({'background-image':'url(white.jpg)','background-position':'0','width':'405px','height':'640px','box-shadow':'none','transform':'rotate(0deg)','border-radius':'0','top':'-95px','left':'0px','transition': 'left 0.3s ease-in-out, top 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out, background 0.3s ease-in-out' });
-        $(this).parent().addClass('.card-page');
+        $(this).parent().css({'top':'-95px','left':'0px'});
+        $(this).parent().addClass('card-page');
         $(this).parent().fadeTo(300,1);
         $(this).parent().next().fadeTo(300,0);
+        $(this).parent().children('.page-event').delay(300).fadeTo(200,1);
+        $(this).parent().children('.answer-text').hide();
+        $(this).parent().children('.icon.back').delay(500).show();
+        $(this).parent().children('.card-icon').hide();
+        $('.icon.search').hide();
+        $('.tool-bar').hide().delay(200).fadeTo(100,1);
+        $('.icon.menu').addClass('backb');
+        $('.tool-bar').css({'background':'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0))'});
     });
-
 
     $('.half.right').click(function() {
         $(this).parent().prev().css({'top':'200px','left':'-680px'});

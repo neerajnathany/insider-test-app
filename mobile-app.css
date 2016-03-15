@@ -67,27 +67,39 @@ table {
 	background: #05274D;
 	background-size: cover;
 	background-repeat: no-repeat;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease-in-out;
 }
 .tool-bar{
+	position: relative;
 	width: 100%;
 	height: 60px;
 	padding: 16px 20px;
+	z-index: 2;
+	background: rgba(0,0,0,0);
+	transition: background 3s ease-in-out;
 }
 .icon{
 	width: 24px;
 	height: 24px;
 	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 3;
 }
 .icon.menu{
 	background: url('icons/menu.png');
-	float: left;
 	background-size: cover;
+	left: 16px;
 }
 .icon.search{
 	background: url('icons/search.png');
-	float: right;
 	background-size: cover;
+	right: 16px;
+}
+.icon.backb{
+	background: url('icons/backb.png');
+	background-size: cover;
+	width: 20px;
+	height: 20px;
 }
 .app-main{
 	width: 100%;
@@ -280,7 +292,7 @@ table {
 	position: absolute;
 	width: 340px;
 	height: 340px;
-    padding: 24px;
+    padding: 14px;
 	border-radius: 340px;
     box-shadow: 0 4px 15px -3px #191919;
     opacity: 0.3;
@@ -306,6 +318,13 @@ table {
     line-height: 36px;
     padding: 0 24px;
     opacity: 0;
+}
+
+.cards .card-icon{
+	width: 54px;
+	height: 54px;
+	margin: 0 auto;
+	margin-top: 125px;
 }
 
 .half{
@@ -345,13 +364,9 @@ table {
 }
 
 .comedy .card-icon{
-	width: 54px;
-	height: 54px;
 	background: url('icons/art.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin: 0 auto;
-	margin-top: 118px;
 }
 
 .music{
@@ -365,13 +380,9 @@ table {
 }
 
 .music .card-icon{
-	width: 54px;
-	height: 54px;
 	background: url('icons/devil.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin: 0 auto;
-	margin-top: 118px;
 }
 
 .getout{
@@ -383,13 +394,9 @@ table {
 }
 
 .getout .card-icon{
-	width: 54px;
-	height: 54px;
 	background: url('icons/mountain.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin: 0 auto;
-	margin-top: 118px;
 }
 
 .food{
@@ -401,13 +408,9 @@ table {
 }
 
 .food .card-icon{
-	width: 54px;
-	height: 54px;
 	background: url('icons/cup.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin: 0 auto;
-	margin-top: 118px;
 }
 
 .alcohol{
@@ -419,13 +422,9 @@ table {
 }
 
 .alcohol .card-icon{
-	width: 54px;
-	height: 54px;
 	background: url('icons/drink.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin: 0 auto;
-	margin-top: 118px;
 }
 
 .do-home{
@@ -437,13 +436,9 @@ table {
 }
 
 .do-home .card-icon{
-	width: 54px;
-	height: 54px;
 	background: url('icons/sofa.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin: 0 auto;
-	margin-top: 118px;
 }
 
 .do-home::after{
@@ -451,14 +446,57 @@ table {
 }
 
 .card-page{
-	background: white !important;
-	width:405px;
-	height':640px;
-	box-sizing:border-box;
-	transform:rotate(0deg);
-	border-radius:0,top:-96px;
-	left:0px;
-	transition: left 0.3s ease-in-out, top 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+	overflow: scroll;
+	background: url('white.jpg');
+	position: relative;
+	background-position: 0;
+	width: 405px;
+	height: 640px;
+	box-shadow: none;
+	border-radius: 0;
+	transition: left 0.3s ease-in-out, top 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.5s ease-in-out, background 0.3s ease-in-out !important;
+}
+
+
+.page-header{
+
+}
+.page-event{
+	width: 100%;
+	height: 290px;
+	margin-bottom: 14px;
+	box-shadow: rgb(204, 204, 204) 0px 2px 6px -1px;
+    background: white;
+    border-radius: 2px;
+    display: none;
+}
+
+.page-event:last-child{
+	margin-bottom: 0;
+}
+
+.event-image{
+	width: 100%;
+    height: 209px;
+    background: url("aib1.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.event-details{
+	height: 81px;
+	color: black;
+    font-family: 'Museo Sans';
+    padding: 12px 14px;
+    box-sizing:border-box;
+}
+
+.event-details span{
+	float: left;
+    width: 100%;
+    display: block;
+    margin-bottom: 7px;
+    text-align: left;
 }
 
 .app-below{
@@ -470,6 +508,7 @@ table {
 }
 
 .explore{
+	position: static;
 	width: 36px;
 	height: 36px;
 	background: url('explore.png');
