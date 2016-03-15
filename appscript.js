@@ -17,6 +17,13 @@ jQuery(document).ready(function() {
         $('.comedy .answer-text').delay(290).fadeTo(60,1);
     });
 
+     $('.half.bottom').click(function() {
+        $(this).parent().css({'background-image':'url(white.jpg)','background-position':'0','width':'405px','height':'640px','box-shadow':'none','transform':'rotate(0deg)','border-radius':'0','top':'-95px','left':'0px','transition': 'left 0.3s ease-in-out, top 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out, background 0.3s ease-in-out' });
+        $(this).parent().addClass('.card-page');
+        $(this).parent().fadeTo(300,1);
+        $(this).parent().next().fadeTo(300,0);
+    });
+
 
     $('.half.right').click(function() {
         $(this).parent().prev().css({'top':'200px','left':'-680px'});

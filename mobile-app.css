@@ -310,19 +310,26 @@ table {
 
 .half{
 	position: absolute;
-	top: 0;
+	top: 25%;
 }
 
 .half.left{
 	left: 0;
 	width: 50%;
-	height: 340px;
+	height: 170px;
 }
 
 .half.right{
-	right: 0;
-	width: 50%;
-	height: 340px;
+    right: 0;
+    width: 50%;
+    height: 170px;
+}
+
+.half.bottom{
+	top: 74%;
+	left: 0;
+	width: 100%;
+	height: 85px;
 }
 
 .comedy{
@@ -334,6 +341,7 @@ table {
 	left: 387.5px;
     transition: left 0.3s cubic-bezier(0.05, 0.02, 1, 1), top 0.3s cubic-bezier(0.32, 0.63, 0.66, 0.99), transform 0.3s linear;
     transform: rotate(37.6deg);
+    box-sizing:border-box;
 }
 
 .comedy .card-icon{
@@ -442,11 +450,23 @@ table {
 	content: none;
 }
 
+.card-page{
+	background: white !important;
+	width:405px;
+	height':640px;
+	box-sizing:border-box;
+	transform:rotate(0deg);
+	border-radius:0,top:-96px;
+	left:0px;
+	transition: left 0.3s ease-in-out, top 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+
 .app-below{
 	width: 100%;
 	height: 53px;
 	background: white;
 	padding-top: 8px;
+	border-top: 1px solid #ccc;
 }
 
 .explore{
