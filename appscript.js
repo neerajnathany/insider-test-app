@@ -71,7 +71,7 @@ jQuery(document).ready(function() {
 
 
     $('.comedy .right').click(function() {
-        $('.app-screen').css({'background':'#090064'});
+        $('.app-screen').css({'background':'#003773'});
         $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
             $(this).text("Heard it on the album?");
         }).animate({'opacity': 1}, 150);
@@ -89,7 +89,7 @@ jQuery(document).ready(function() {
         }).animate({'opacity': 1}, 150);
     });
     $('.getout .left').click(function() {
-        $('.app-screen').css({'background':'#090064'});
+        $('.app-screen').css({'background':'#003773'});
         $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
             $(this).text("Heard it on the album?");
         }).animate({'opacity': 1}, 150);
