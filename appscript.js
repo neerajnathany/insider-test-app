@@ -23,9 +23,9 @@ jQuery(document).ready(function() {
         $(this).parent().addClass('card-page');
         $(this).parent().next().fadeTo(300,0);
         $(this).parent().prev().fadeTo(300,0);
-        $(this).parent().children('.page-event').delay(300).fadeTo(200,1);
-        $(this).parent().children('.answer-text').hide();
-        $(this).parent().children('.card-icon').hide();
+        $(this).parent().children('.page-event').delay(200).fadeTo(200,1);
+        $(this).parent().children('.answer-text').fadeTo(300,0);
+        $(this).parent().children('.card-icon').fadeTo(200,0);
         $('.icon.search').hide();
         $('.tool-bar').hide().delay(200).fadeTo(100,1);
         $('.icon.menu').addClass('backb');
@@ -37,8 +37,8 @@ jQuery(document).ready(function() {
         $('.card-page').next().fadeTo(300,0.3);
         $('.card-page').prev().fadeTo(300,0.3);
         $('.card-page').children('.page-event').fadeTo(200,0);
-        $('.card-page').children('.answer-text').show();
-        $('.card-page').children('.card-icon').show();
+        $('.card-page').children('.answer-text').fadeTo(300,1);
+        $('.card-page').children('.card-icon').fadeTo(200,1);
         $('.icon.search').show();
         $('.tool-bar').hide().delay(200).fadeTo(100,1);
         $('.tool-bar').css({'background':'rgba(0,0,0,0)'});

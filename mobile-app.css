@@ -451,7 +451,7 @@ table {
 
 .card-page{
 	overflow: scroll;
-	background: url('white.jpg');
+	background: white;
 	position: relative;
 	background-position: 0;
 	width: 405px;
@@ -460,6 +460,10 @@ table {
 	left: 0 !important;
 	box-shadow: none;
 	border-radius: 0;
+}
+
+.card-page::after{
+	content: '';
 }
 
 .page-event{
