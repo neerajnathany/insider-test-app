@@ -20,17 +20,24 @@ jQuery(document).ready(function() {
      $('.half.bottom').click(function() {
         $(this).parent().css({'top':'-95px','left':'0px'});
         $(this).parent().addClass('card-page');
-        $(this).parent().fadeTo(300,1);
         $(this).parent().next().fadeTo(300,0);
+        $(this).parent().prev().fadeTo(300,0);
         $(this).parent().children('.page-event').delay(300).fadeTo(200,1);
         $(this).parent().children('.answer-text').hide();
-        $(this).parent().children('.icon.back').delay(500).show();
         $(this).parent().children('.card-icon').hide();
         $('.icon.search').hide();
         $('.tool-bar').hide().delay(200).fadeTo(100,1);
         $('.icon.menu').addClass('backb');
         $('.tool-bar').css({'background':'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0))'});
     });
+
+
+    $('.backb').click(function() {
+
+        $('.card-page').hide();
+
+    }); 
+
 
     $('.half.right').click(function() {
         $(this).parent().prev().css({'top':'200px','left':'-680px'});

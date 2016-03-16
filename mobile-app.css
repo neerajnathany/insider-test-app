@@ -370,7 +370,7 @@ table {
 }
 
 .music{
-	background: url('music.jpg');
+	background: url('music.gif');
 	/*background-position: -200px;*/
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -457,10 +457,6 @@ table {
 	transition: left 0.3s ease-in-out, top 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.5s ease-in-out, background 0.3s ease-in-out !important;
 }
 
-
-.page-header{
-
-}
 .page-event{
 	width: 100%;
 	height: 290px;
