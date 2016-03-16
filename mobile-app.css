@@ -505,6 +505,22 @@ table {
     background-repeat: no-repeat;
 }
 
+.event-image.sec{
+	width: 100%;
+    height: 209px;
+    background: url("beer.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.event-image.third{
+	width: 100%;
+    height: 209px;
+    background: url("ladakh.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .event-details{
 	height: 81px;
 	color: black;
