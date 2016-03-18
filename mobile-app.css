@@ -62,32 +62,45 @@ table {
 	background: black;
 }
 .app-screen{
+	position: relative;
 	width: 100%;
 	height: 693px;
 	background: #05274D;
 	background-size: cover;
 	background-repeat: no-repeat;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease-in-out;
 }
 .tool-bar{
+	position: relative;
 	width: 100%;
 	height: 60px;
 	padding: 16px 20px;
+	z-index: 2;
+	background: rgba(0,0,0,0);
+	transition: background 3s ease-in-out;
 }
 .icon{
 	width: 24px;
 	height: 24px;
 	background-repeat: no-repeat;
+	position: absolute;
+	z-index: 5;
 }
 .icon.menu{
 	background: url('icons/menu.png');
-	float: left;
 	background-size: cover;
+	left: 16px;
 }
 .icon.search{
 	background: url('icons/search.png');
-	float: right;
 	background-size: cover;
+	right: 16px;
+}
+.icon.backb{
+	background: url('icons/backb.png');
+	background-size: cover;
+	width: 20px;
+	height: 20px;
 }
 .app-main{
 	width: 100%;
@@ -96,6 +109,13 @@ table {
 	text-align: center;
 	font-family: Lato;
 	color: white;
+}
+.logo-contain{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	transition: top 0.3s ease-in-out;
+
 }
 .logo{
 	width: 71px;
@@ -106,6 +126,7 @@ table {
 	background-repeat: no-repeat;
 	animation: logo-ani 0.7s 1 ease-in-out;
 	animation-fill-mode: forwards;
+	transition: background 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
 @keyframes logo-ani{
@@ -258,26 +279,21 @@ table {
 	100%{opacity: 0;left: 242px;}
 }
 
-
-
-
 .card-list{
 	position: absolute;
 	z-index: 1;
 	opacity: 0;
-	top: 18%;
+	top: 8%;
 	left: 0;
 	animation-fill-mode: forwards;
 	transition: opacity 0.3s ease-in-out;
-
 }
-
 
 .cards{
 	position: absolute;
 	width: 340px;
 	height: 340px;
-    padding: 24px;
+    padding: 14px;
 	border-radius: 340px;
     box-shadow: 0 4px 15px -3px #191919;
     opacity: 0.3;
@@ -294,28 +310,67 @@ table {
 }
 
 .cards .answer-text{
-	margin-top: 42%;
-	font-size: 28px;
-	font-weight: 600;
-	line-height: 36px;
-	padding: 0 24px;
+    position: absolute;
+    width: 62%;
+    top: 116%;
+    left: 148px;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 6px 16px;
+    font-family: Lato;
+    letter-spacing: 0.2px;
+    font-style: italic;
+    opacity: 0;
+
+}
+
+.cards .answer-text.monkey{
+    top: 117%;
+    left: 29px;
+    width: 137px;
+    height: 116px;
+    padding: 0;
+    background: url('monkey3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.cards .card-icon{
+	position: absolute;
+	width: 54px;
+	height: 54px;
+	top: 50%;
+	left: 50%;
+	margin-top: -27px;
+	margin-left: -27px;
 }
 
 .half{
 	position: absolute;
-	top: 0;
+	top: 25%;
+	z-index: 10;
 }
 
 .half.left{
 	left: 0;
 	width: 50%;
-	height: 340px;
+	height: 170px;
 }
 
 .half.right{
-	right: 0;
-	width: 50%;
-	height: 340px;
+    right: 0;
+    width: 50%;
+    height: 170px;
+}
+
+.half.bottom{
+	top: 74%;
+	left: 0;
+	width: 100%;
+	height: 85px;
 }
 
 .comedy{
@@ -327,6 +382,13 @@ table {
 	left: 387.5px;
     transition: left 0.3s cubic-bezier(0.05, 0.02, 1, 1), top 0.3s cubic-bezier(0.32, 0.63, 0.66, 0.99), transform 0.3s linear;
     transform: rotate(37.6deg);
+    box-sizing:border-box;
+}
+
+.comedy .card-icon{
+	background: url('icons/art.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .music{
@@ -339,12 +401,24 @@ table {
 	transition: left 0.3s ease-in-out;
 }
 
+.music .card-icon{
+	background: url('icons/devil.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .getout{
 	background: url('getout.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	left: 1000px;
 	transition: left 0.3s ease-in-out;
+}
+
+.getout .card-icon{
+	background: url('icons/mountain.png');
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .food{
@@ -355,6 +429,12 @@ table {
 	transition: left 0.3s ease-in-out;
 }
 
+.food .card-icon{
+	background: url('icons/cup.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .alcohol{
 	background: url('alcohol.jpg');
 	background-size: cover;
@@ -363,86 +443,113 @@ table {
 	transition: left 0.3s ease-in-out;
 }
 
+.alcohol .card-icon{
+	background: url('icons/drink.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .do-home{
-	width:405px;
-	height: 640px;
-	left: 1900px;
-	opacity: 0;
-	box-shadow: none;
-	padding: 0;
-	border-radius: 0;
+	background: url('do-home.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	left: 1600px;
 	transition: left 0.3s ease-in-out;
 }
+
+.do-home .card-icon{
+	background: url('icons/sofa.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 .do-home::after{
 	content: none;
 }
 
-.do-home .left, .do-home .right{
-	height: 640px;
-}
-
-.home-header{
-	width: 100%;
-	height: 240px;
-	background: url('do-home.jpg');
-	background-size: 115%;
-	background-repeat: no-repeat;
-}
-
-.home-answer{
-	position: absolute;
-	top: -80px;
-}
-
-.option-list{
-	width: 100%;
-	height: 400px;
-	padding: 14px;
+.card-page{
 	overflow: scroll;
+	background: white;
+	position: relative;
+	background-position: 0;
+	width: 405px;
+	height: 640px;
+	top: -106px !important;
+	left: 0 !important;
+	box-shadow: none;
+	border-radius: 0;
 }
 
-.each-card{
+.card-page::after{
+	content: '';
+}
+
+.page-event{
 	width: 100%;
 	height: 290px;
-	background: white;
 	margin-bottom: 14px;
-	border-radius: 2px;
-	box-shadow: 0 2px 6px -1px #ccc;
+	box-shadow: rgb(204, 204, 204) 0px 2px 6px -1px;
+    background: white;
+    border-radius: 2px;
+    display: none;
 }
 
-.card-image{
+.page-event:last-child{
+	margin-bottom: 0;
+}
+
+.event-image{
 	width: 100%;
-	height: 209px;
-	background: url('aib.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+    height: 209px;
+    background: url("aib1.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.card-image.second{
-	background: url('eic.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+
+.event-image.sec{
+	width: 100%;
+    height: 209px;
+    background: url("beer.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.card-details{
-	padding: 12px 14px;
+
+.event-image.third{
+	width: 100%;
+    height: 209px;
+    background: url("ladakh.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.event-details{
+	height: 81px;
 	color: black;
-	font-family:Museo Sans;
+    font-family: 'Museo Sans';
+    padding: 12px 14px;
+    box-sizing:border-box;
 }
-.card-details span{
+
+.event-details span{
 	float: left;
-	width: 100%;
-	display: block;
-	margin-bottom: 7px;
-	text-align: left;
+    width: 100%;
+    display: block;
+    margin-bottom: 7px;
+    text-align: left;
 }
 
 .app-below{
-	width: 100%;
+	position: absolute;
+	width: 405px;
 	height: 53px;
+	bottom: 0px;
+	z-index: 11;
 	background: white;
 	padding-top: 8px;
 }
 
 .explore{
+	position: static;
 	width: 36px;
 	height: 36px;
 	background: url('explore.png');

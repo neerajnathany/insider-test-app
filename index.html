@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="mobile-app.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 	<script src="appscript.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="mobile-screen">
@@ -16,7 +17,7 @@
 	    		<div class="icon search"></div>
 	    	</div>
 	    	<div class="app-main">
-	    		<div class="logo"></div>
+	    		<div class="logo-contain"><div class="logo"></div></div>
 	    		<div class="header-text univ">
 	    			<h2>Good afternoon</h2>
 	    			<h4>What would you like to do?</h4>
@@ -29,52 +30,191 @@
 	    		</div>
 	    		<div class="card-list">
 	    			<div class="cards univ comedy">
-	    				<div class="answer-text">Start laughing</div>
+	    				<div class="card-icon"></div>
+	    				<div class="univ answer-text">Have a double chin?<br>Start laughing.</div>
+	    				<div class="univ answer-text monkey"></div>
 	    				<div class="half left"></div>
 	    				<div class="half right"></div>
+	    				<div class="half bottom"></div>
+	    				<div class="page-header"></div>
+	    				<div class="page-event">
+	    					<div class="event-image"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">AIB Diwas</span>
+    							<span style="font-size:13px;font-weight:300;">Feb 20, 4 PM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Hindu Gymkhana, Marine Lines</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹1250 - ₹2500</span>
+    						</div>
+	    				</div>
+	    				<div class="page-event">
+	    					<div class="event-image sec"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">The Barking Deer Brewpub turns Green!</span>
+    							<span style="font-size:13px;font-weight:300;">Mar 17, 11:30 AM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">The Barking Deer, Mumbai</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">FREE</span>
+    						</div>
+	    				</div>
+	    				<div class="page-event">
+	    					<div class="event-image third"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">Mapping Ladakh</span>
+    							<span style="font-size:13px;font-weight:300;">June 2 - 11</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Ladakh, Jammu & Kashmir</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹38,500</span>
+    						</div>
+	    				</div>
 	    			</div>
 	    			<div class="cards univ music">
-	    				<div class="answer-text">Now watch it live</div>
+	    				<div class="card-icon"></div>
+	    				<div class="univ answer-text">Heard it on the album?<br>Now watch it live.</div>
+	    				<div class="univ answer-text monkey"></div>
 	    				<div class="half left"></div>
 	    				<div class="half right"></div>
+	    				<div class="half bottom"></div>
+	    				<div class="page-header"></div>
+	    				<div class="page-event">
+	    					<div class="event-image"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">AIB Diwas</span>
+    							<span style="font-size:13px;font-weight:300;">Feb 20, 4 PM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Hindu Gymkhana, Marine Lines</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹1250 - ₹2500</span>
+    						</div>
+	    				</div>
+	    				<div class="page-event">
+	    					<div class="event-image sec"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">The Barking Deer Brewpub turns Green!</span>
+    							<span style="font-size:13px;font-weight:300;">Mar 17, 11:30 AM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">The Barking Deer, Mumbai</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">FREE</span>
+    						</div>
+	    				</div>
+	    				<div class="page-event">
+	    					<div class="event-image third"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">Mapping Ladakh</span>
+    							<span style="font-size:13px;font-weight:300;">June 2 - 11</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Ladakh, Jammu & Kashmir</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹38,500</span>
+    						</div>
+	    				</div>
 	    			</div>
 					<div class="cards univ getout">
-						<div class="answer-text">Time to get out of town</div>
+						<div class="card-icon"></div>
+						<div class="univ answer-text">Bored of your routine?<br>Time to get out of town.</div>
+						<div class="univ answer-text monkey"></div>
 						<div class="half left"></div>
 	    				<div class="half right"></div>
+	    				<div class="half bottom"></div>
+	    				<div class="page-header"></div>
+	    				<div class="page-event">
+	    					<div class="event-image"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">AIB Diwas</span>
+    							<span style="font-size:13px;font-weight:300;">Feb 20, 4 PM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Hindu Gymkhana, Marine Lines</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹1250 - ₹2500</span>
+    						</div>
+	    				</div>
+	    				<div class="page-event">
+	    					<div class="event-image sec"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">The Barking Deer Brewpub turns Green!</span>
+    							<span style="font-size:13px;font-weight:300;">Mar 17, 11:30 AM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">The Barking Deer, Mumbai</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">FREE</span>
+    						</div>
+	    				</div>
+	    				<div class="page-event">
+	    					<div class="event-image third"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">Mapping Ladakh</span>
+    							<span style="font-size:13px;font-weight:300;">June 2 - 11</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Ladakh, Jammu & Kashmir</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹38,500</span>
+    						</div>
+	    				</div>
 					</div>
 					<div class="cards univ food">
-						<div class="answer-text">Whatever, let's eat</div>
+						<div class="card-icon"></div>
+						<div class="univ answer-text">Isn't gluttony a sin?<br>Whatever, let's eat.</div>
+						<div class="univ answer-text monkey"></div>
 						<div class="half left"></div>
 	    				<div class="half right"></div>
+	    				<div class="half bottom"></div>
+	    				<div class="page-header"></div>
+	    				<div class="page-event">
+	    					<div class="event-image"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">AIB Diwas</span>
+    							<span style="font-size:13px;font-weight:300;">Feb 20, 4 PM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Hindu Gymkhana, Marine Lines</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹1250 - ₹2500</span>
+    						</div>
+	    				</div>
+	    				<div class="page-event">
+	    					<div class="event-image"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">AIB Diwas</span>
+    							<span style="font-size:13px;font-weight:300;">Feb 20, 4 PM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Hindu Gymkhana, Marine Lines</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹1250 - ₹2500</span>
+    						</div>
+	    				</div>
+	    				<div class="page-event">
+	    					<div class="event-image"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">AIB Diwas</span>
+    							<span style="font-size:13px;font-weight:300;">Feb 20, 4 PM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Hindu Gymkhana, Marine Lines</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹1250 - ₹2500</span>
+    						</div>
+	    				</div>
 					</div>
 					<div class="cards univ alcohol">
-						<div class="answer-text">Think alcohol tasting</div>
+						<div class="card-icon"></div>
+						<div class="univ answer-text">Need a new hobby?<br>Think alcohol tasting.</div>
+						<div class="univ answer-text monkey"></div>
 						<div class="half left"></div>
 	    				<div class="half right"></div>
+	    				<div class="half bottom"></div>
+	    				<div class="page-header"></div>
+	    				<div class="page-event">
+	    					<div class="event-image"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">AIB Diwas</span>
+    							<span style="font-size:13px;font-weight:300;">Feb 20, 4 PM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Hindu Gymkhana, Marine Lines</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹1250 - ₹2500</span>
+    						</div>
+	    				</div>
+	    				<div class="page-event">
+	    					<div class="event-image sec"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">The Barking Deer Brewpub turns Green!</span>
+    							<span style="font-size:13px;font-weight:300;">Mar 17, 11:30 AM</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">The Barking Deer, Mumbai</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">FREE</span>
+    						</div>
+	    				</div>
+	    				<div class="page-event">
+	    					<div class="event-image third"></div>
+    						<div class="event-details">
+    							<span style="font-size:17px;font-weight:600;">Mapping Ladakh</span>
+    							<span style="font-size:13px;font-weight:300;">June 2 - 11</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Ladakh, Jammu & Kashmir</span>
+    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">₹38,500</span>
+    						</div>
+	    				</div>
 					</div>
 					<div class="cards univ do-home">
+						<div class="card-icon"></div>
+	    				<div class="univ answer-text">Ah, being at home can be fun too.</div>
+	    				<div class="univ answer-text monkey"></div>
 						<div class="half left"></div>
 	    				<div class="half right"></div>
-	    				<div class="univ home-header">
-	    					<div class="answer-text home-answer">Screw it. Being at home can be fun too</div>
-	    				</div>
-	    				<div class="univ option-list">
-	    					<div class="each-card">
-	    						<div class="card-image"></div>
-	    						<div class="card-details">
-	    							<span style="font-size:17px;font-weight:600;">On Air with AIB</span>
-	    							<span style="font-size:13px;font-weight:300;">Every Sunday, 10 PM</span>
-	    							<span style="font-size:13px;font-weight:300;display:inline-block;width:60%">Hotstar, StarPlus & StarWorld</span>
-	    							<span style="font-size:13px;font-weight:300;display:inline-block;text-align:right;width:40%">FREE</span>
-	    						</div>
-	    					</div>
-	    					<div class="each-card">
-	    						<div class="card-image second"></div>
-	    						<div class="card-details"></div>
-	    					</div>
-	    					<div class="each-card"></div>
-	    				</div>
 					</div>
 	    		</div>
 	    	</div>

@@ -4,42 +4,74 @@ jQuery(document).ready(function() {
 
      $('.fun-icon').click(function() {
         $('.app-screen').css({'background':'#7D0B0B'});
-        $('.logo').fadeTo(250, 0);
-        $('.header-text').css({'top':'-36px'});
-        $('.header-text h2').css({'opacity':'0'});
-        $('.header-text h4').css({'font-size':'28px'});
-        $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
-            $(this).text("How to lose that double chin?");
-        }).animate({'opacity': 1}, 150);
+        $('.logo-contain').css({'top':'-54px'});
+        $('.logo').width('53px').height('45px');
+        $('.logo').css('background-image','url(insider-w.png)');
+        $('.header-text').css({'top':'-50px'});
+        $('.header-text').fadeTo(300,0);
         $('.intro-sect').css({'opacity': '0','left':'-150px'});
         $('.card-list').css({'opacity': '1'});
         $('.comedy').css({'top':'20px','left':'32.5px','transform':'rotate(0deg)'});
         $('.comedy').next().css({'top':'140px','left':'387.5px','transform':'rotate(37.6deg)'});
-        $('.comedy').fadeTo(500,1);
+        $('.comedy').fadeTo(300,1);
+        $('.comedy .answer-text').delay(290).fadeTo(60,1);
+        $('.header-text').hide();
     });
+
+     $('.half.bottom').click(function() {
+        $(this).parent().css({'transition':'left 0.3s ease-in-out, top 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out, border-radius 0.3s ease-in-out, background 0.3s ease-in-out'});
+        $(this).parent().addClass('card-page');
+        $(this).parent().next().fadeTo(300,0);
+        $(this).parent().prev().fadeTo(300,0);
+        $(this).parent().children('.page-event').delay(200).fadeTo(200,1);
+        $(this).parent().children('.answer-text').fadeTo(300,0);
+        $(this).parent().children('.card-icon').fadeTo(200,0);
+        $('.icon.search').hide();
+        $('.tool-bar').hide().delay(200).fadeTo(100,1);
+        $('.icon.menu').addClass('backb');
+        $('.tool-bar').css({'background':'linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0))'});
+    });
+
+
+    $(document).on('click', '.icon.backb', function() {
+        $('.card-page').next().fadeTo(300,0.3);
+        $('.card-page').prev().fadeTo(300,0.3);
+        $('.card-page').children('.page-event').fadeTo(200,0);
+        $('.card-page').children('.answer-text').fadeTo(300,1);
+        $('.card-page').children('.card-icon').fadeTo(200,1);
+        $('.icon.search').show();
+        $('.tool-bar').hide().delay(200).fadeTo(100,1);
+        $('.tool-bar').css({'background':'rgba(0,0,0,0)'});
+        $('.icon.menu').delay(300).removeClass('backb');
+        $('.card-page').delay(300).removeClass('card-page');
+    }); 
 
 
     $('.half.right').click(function() {
         $(this).parent().prev().css({'top':'200px','left':'-680px'});
         $(this).parent().css({'top':'140px','left':'-322.5px','transform':'rotate(-37.6deg)','transition': 'left 0.3s cubic-bezier(0, 0, 0.95, 0.98), top 0.3s cubic-bezier(0.34, 0.01, 0.68, 0.37), transform 0.3s linear'});
-        $(this).parent().fadeTo(500, 0.3);
+        $(this).parent().fadeTo(300, 0.3);
+        $(this).siblings('.answer-text').fadeTo(50, 0);
         $(this).parent().next().css({'top':'20px','left':'32.5px','transform':'rotate(0deg)','transition': 'left 0.3s cubic-bezier(0.05, 0.02, 1, 1), top 0.3s cubic-bezier(0.32, 0.63, 0.66, 0.99), transform 0.3s linear'});
-        $(this).parent().next().fadeTo(500, 1);
+        $(this).parent().next().fadeTo(300, 1);
+        $(this).parent().next().children('.answer-text').delay(290).fadeTo(60,1);
         $(this).parent().next().next().css({'top':'140px','left':'387.5px','transform':'rotate(37.6deg)'});
     });
 
     $('.half.left').click(function() {
         $(this).parent().prev().prev().css({'top':'140px','left':'-322.5px','transform':'rotate(-37.6deg)'});
         $(this).parent().prev().css({'top':'20px','left':'32.5px','transform':'rotate(0deg)','transition': 'left 0.3s cubic-bezier(0.05, 0.02, 1, 1), top 0.3s cubic-bezier(0.32, 0.63, 0.66, 0.99), transform 0.3s linear'});
-        $(this).parent().prev().fadeTo(500, 1);
+        $(this).parent().prev().fadeTo(300, 1);
+        $(this).parent().prev().children('.answer-text').delay(290).fadeTo(60,1);
         $(this).parent().css({'top':'140px','left':'387.5px','transform':'rotate(37.6deg)','transition': 'left 0.3s cubic-bezier(0, 0, 0.95, 0.98), top 0.3s cubic-bezier(0.34, 0.01, 0.68, 0.37), transform 0.3s linear'});
-        $(this).parent().fadeTo(500, 0.3);
+        $(this).parent().fadeTo(300, 0.3);
+        $(this).siblings('.answer-text').fadeTo(50, 0);
         $(this).parent().next().css({'top':'200px','left':'742.5px'});
     });
 
 
     $('.comedy .right').click(function() {
-        $('.app-screen').css({'background':'#090064'});
+        $('.app-screen').css({'background':'#003773'});
         $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
             $(this).text("Heard it on the album?");
         }).animate({'opacity': 1}, 150);
@@ -57,7 +89,7 @@ jQuery(document).ready(function() {
         }).animate({'opacity': 1}, 150);
     });
     $('.getout .left').click(function() {
-        $('.app-screen').css({'background':'#090064'});
+        $('.app-screen').css({'background':'#003773'});
         $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
             $(this).text("Heard it on the album?");
         }).animate({'opacity': 1}, 150);
@@ -79,7 +111,6 @@ jQuery(document).ready(function() {
         $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
             $(this).text("Need a new hobby?");
         }).animate({'opacity': 1}, 150);
-        $(this).parent().next().next().css({'top':'-164px','left':'420px','transform':'rotate(0deg)'});
     });
     $('.alcohol .left').click(function() {
         $('.app-screen').css({'background':'#852905'});
@@ -88,18 +119,16 @@ jQuery(document).ready(function() {
         }).animate({'opacity': 1}, 150);
     });
     $('.alcohol .right').click(function() {
-        $('.app-screen').css({'background':'white'});
-        $('.header-text h4').animate({'opacity': 0}, 150);
-        $(this).parent().fadeTo(100, 0);
-        $(this).parent().next().css({'top':'-164px','left':'0'});
+        $('.app-screen').css({'background':'#666350'});
+        $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
+            $(this).text("Need a new hobby?");
+        }).animate({'opacity': 1}, 150);
     });
     $('.do-home .left').click(function(){
         $('.app-screen').css({'background':'#C5A175'});
-        $(this).parent().fadeTo(300, 0);
-        $('.header-text h4').animate({'opacity': 1}, 300, function () {
-            $(this).text("Need a new hobby?");
-        });
-        $(this).parent().css({'top':'-164px','left':'420px','transform':'rotate(0deg)','transition': 'left 0.3s cubic-bezier(0, 0, 0.95, 0.98), top 0.3s cubic-bezier(0.34, 0.01, 0.68, 0.37), transform 0.3s linear'});
+        $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
+            $(this).text("Gluttony is a sin");
+        }).animate({'opacity': 1}, 150);
     });
 
 });
