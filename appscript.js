@@ -6,7 +6,7 @@ jQuery(document).ready(function() {
         $('.app-screen').css({'background':'#7D0B0B'});
         $('.logo-contain').css({'top':'-54px'});
         $('.logo').width('53px').height('45px');
-        $('.logo').css('background-image','url(insider-w.png)');
+        $('.logo').css('background-image','url(assets/icons/insider-w.png)');
         $('.header-text').css({'top':'-50px'});
         $('.header-text').fadeTo(300,0);
         $('.intro-sect').css({'opacity': '0','left':'-150px'});
