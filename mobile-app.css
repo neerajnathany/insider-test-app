@@ -43,6 +43,31 @@ table {
   border-spacing: 0;
 }
 
+@font-face{
+	font-family: Lato;
+    src: url('assets/fonts/Lato_Light.ttf');
+    font-weight: 300;
+}
+
+@font-face{
+	font-family: Lato;
+    src: url('assets/fonts/Lato_Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face{
+	font-family: Lato;
+    src: url('assets/fonts/Lato_Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face{
+	font-family: Lato;
+    src: url('assets/fonts/Lato_Bold.ttf');
+    font-weight: 700;
+}
+
 
 .univ{
 	display: block;
@@ -87,17 +112,17 @@ table {
 	z-index: 5;
 }
 .icon.menu{
-	background: url('icons/menu.png');
+	background: url('assets/icons/menu.png');
 	background-size: cover;
 	left: 16px;
 }
 .icon.search{
-	background: url('icons/search.png');
+	background: url('assets/icons/search.png');
 	background-size: cover;
 	right: 16px;
 }
 .icon.backb{
-	background: url('icons/backb.png');
+	background: url('assets/icons/backb.png');
 	background-size: cover;
 	width: 20px;
 	height: 20px;
@@ -121,7 +146,7 @@ table {
 	width: 71px;
 	height: 60px;
 	margin: 0 auto;
-	background: url('insider.png');
+	background: url('assets/icons/insider.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	animation: logo-ani 0.7s 1 ease-in-out;
@@ -162,7 +187,7 @@ table {
 .header-text h4{
 	margin-top: 15px;
 	font-size: 24px;
-	font-weight: 600;
+	font-weight: 700;
 	animation: appear-ani2 0.7s 1 ease-in-out;
 	transition: font-size 0.3s ease-in-out;
 }
@@ -196,32 +221,32 @@ table {
 }
 
 @keyframes icon-intro{
-	0%    {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('icons/art.png');background-size: contain;}
+	0%    {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('assets/icons/art.png');background-size: contain;}
 	10%   {opacity:1;margin-left: -20px;transform: scale(1,1);}
-	15%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('icons/art.png');background-size: contain;}
-	15.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('icons/black.png');background-size: contain;}
+	15%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('assets/icons/art.png');background-size: contain;}
+	15.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('assets/icons/black.png');background-size: contain;}
 	25%   {opacity:1;margin-left: -20px;transform: scale(1,1);}
-    30%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('icons/black.png');background-size: contain;}
-    30.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('icons/cup.png');background-size: contain;}
+    30%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('assets/icons/black.png');background-size: contain;}
+    30.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('assets/icons/cup.png');background-size: contain;}
 	40%   {opacity:1;margin-left: -20px;transform: scale(1,1);}
-    45%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('icons/cup.png');background-size: contain}
-    45.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('icons/devil.png');background-size: contain;}
+    45%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('assets/icons/cup.png');background-size: contain}
+    45.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('assets/icons/devil.png');background-size: contain;}
 	55%   {opacity:1;margin-left: -20px;transform: scale(1,1);}
-    60%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('icons/devil.png');background-size: contain}
-    60.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('icons/drink.png');background-size: contain;}
+    60%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('assets/icons/devil.png');background-size: contain}
+    60.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('assets/icons/drink.png');background-size: contain;}
 	70%   {opacity:1;margin-left: -20px;transform: scale(1,1);}
-    75%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('icons/drink.png');background-size: contain;}
-    75.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('icons/icon.png');background-size: contain;}
+    75%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('assets/icons/drink.png');background-size: contain;}
+    75.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('assets/icons/icon.png');background-size: contain;}
 	85%   {opacity:1;margin-left: -20px;transform: scale(1,1);}
-    90%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('icons/icon.png');background-size: contain;}
-    90.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('icons/arrows.png');background-size: contain;}
-    99.99%  {opacity:1;margin-left: -20px;transform: scale(1,1);background: url('icons/arrows.png');background-size: contain;}
+    90%   {opacity:0;margin-left: -30px;transform: scale(1,1);background: url('assets/icons/icon.png');background-size: contain;}
+    90.1% {opacity:0;margin-left: -20px;transform: scale(0.5,0.5);background: url('assets/icons/arrows.png');background-size: contain;}
+    99.99%  {opacity:1;margin-left: -20px;transform: scale(1,1);background: url('assets/icons/arrows.png');background-size: contain;}
     100%   {opacity: 0}
 }
 
 
 .fun-icon.second{
-	background: url('icons/arrows.png');
+	background: url('assets/icons/arrows.png');
 	background-size: contain;
 	opacity: 0;
 	z-index: 3;
@@ -245,7 +270,7 @@ table {
 	text-transform: lowercase;
 	letter-spacing: 0.5px; 
 	font-size: 21px;
-	font-weight: 200;
+	font-weight: 300;
 	animation: text-slide 0.5s 3.15s 1 linear;
 	animation-fill-mode: forwards;
 }
@@ -306,7 +331,7 @@ table {
     left: 0;
 	width: 100%;
 	text-align: center;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .cards .answer-text{
@@ -332,7 +357,7 @@ table {
     width: 137px;
     height: 116px;
     padding: 0;
-    background: url('monkey3.png');
+    background: url('assets/monkey3.png');
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
@@ -374,7 +399,7 @@ table {
 }
 
 .comedy{
-	background: url('comedy.jpg');
+	background: url('assets/comedy.jpg');
 	background-position: -110px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -386,13 +411,13 @@ table {
 }
 
 .comedy .card-icon{
-	background: url('icons/art.png');
+	background: url('assets/icons/art.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .music{
-	background: url('music.gif');
+	background: url('assets/music.gif');
 	/*background-position: -200px;*/
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -402,13 +427,13 @@ table {
 }
 
 .music .card-icon{
-	background: url('icons/devil.png');
+	background: url('assets/icons/devil.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .getout{
-	background: url('getout.jpg');
+	background: url('assets/getout.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	left: 1000px;
@@ -416,13 +441,13 @@ table {
 }
 
 .getout .card-icon{
-	background: url('icons/mountain.png');
+	background: url('assets/icons/mountain.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .food{
-	background: url('food.jpg');
+	background: url('assets/food.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	left: 1300px;
@@ -430,13 +455,13 @@ table {
 }
 
 .food .card-icon{
-	background: url('icons/cup.png');
+	background: url('assets/icons/cup.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .alcohol{
-	background: url('alcohol.jpg');
+	background: url('assets/alcohol.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	left: 1600px;
@@ -444,13 +469,13 @@ table {
 }
 
 .alcohol .card-icon{
-	background: url('icons/drink.png');
+	background: url('assets/icons/drink.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .do-home{
-	background: url('do-home.jpg');
+	background: url('assets/do-home.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	left: 1600px;
@@ -458,7 +483,7 @@ table {
 }
 
 .do-home .card-icon{
-	background: url('icons/sofa.png');
+	background: url('assets/icons/sofa.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -501,7 +526,7 @@ table {
 .event-image{
 	width: 100%;
     height: 209px;
-    background: url("aib1.jpg") no-repeat;
+    background: url("assets/aib1.jpg") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -509,7 +534,7 @@ table {
 .event-image.sec{
 	width: 100%;
     height: 209px;
-    background: url("beer.jpg") no-repeat;
+    background: url("assets/beer.jpg") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -517,7 +542,7 @@ table {
 .event-image.third{
 	width: 100%;
     height: 209px;
-    background: url("ladakh.jpg") no-repeat;
+    background: url("assets/ladakh.jpg") no-repeat;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -552,7 +577,7 @@ table {
 	position: static;
 	width: 36px;
 	height: 36px;
-	background: url('explore.png');
+	background: url('assets/icons/explore.png');
 	background-size: contain;
 	margin: auto;
 }
