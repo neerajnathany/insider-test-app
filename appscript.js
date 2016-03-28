@@ -1,6 +1,4 @@
 jQuery(document).ready(function() {
-    var offset = 700;
-    var duration = 1000;
 
      $('.fun-icon').click(function() {
         $('.app-screen').css({'background':'#7D0B0B'});
@@ -130,5 +128,19 @@ jQuery(document).ready(function() {
             $(this).text("Gluttony is a sin");
         }).animate({'opacity': 1}, 150);
     });
+
+    $('.app-below').click(function(){
+        $(this).css({'top':'0px'});
+        $(this).children('.below-button').css({'background':'none'});
+        $(this).children('.below-button').children('.icon.explore').css({'background-image':'url(assets/icons/collections.png)','width':'45px','height':'36px','margin-top':'8px'});
+        $(this).children('.explore-page').children('.page-event').delay(200).fadeTo(200,1);
+        $('.app-main').children('.logo-contain').hide();
+    });
+
+    $('.menu').click(function() {
+        $(this).parent().hide();
+
+    });
+
 
 });
