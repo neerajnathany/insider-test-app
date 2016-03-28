@@ -134,13 +134,15 @@ jQuery(document).ready(function() {
         $(this).children('.below-button').css({'background':'none'});
         $(this).children('.below-button').children('.icon.explore').css({'background-image':'url(assets/icons/collections.png)','width':'45px','height':'36px','margin-top':'8px'});
         $(this).children('.explore-page').children('.page-event').delay(200).fadeTo(200,1);
+        $(this).addClass('app-above');
         $('.app-main').children('.logo-contain').hide();
     });
 
-    $('.menu').click(function() {
-        $(this).parent().hide();
-
+    $(document).on('click', '.app-above .below-button .explore', function() {
+        $('.app-below').css({'top':'640px'});
+        $('.app-below').children('.below-button').css({'background':'white'});
+        $('.app-below').children('.below-button').children('.icon.explore').css({'background-image':'url(assets/icons/explore.png)','width':'36px','height':'36px','margin-top':'0'});
+        $('.app-main').children('.logo-contain').show();
     });
-
 
 });
