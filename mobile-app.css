@@ -68,6 +68,18 @@ table {
     font-weight: 700;
 }
 
+@font-face{
+	font-family: Montserrat;
+    src: url('assets/fonts/Montserrat-Regular.ttf');
+    font-weight: 200;
+}
+
+@font-face{
+	font-family: Montserrat;
+    src: url('assets/fonts/Montserrat-Bold.ttf');
+    font-weight: 600;
+}
+
 
 .univ{
 	display: block;
@@ -331,16 +343,15 @@ table {
     left: 0;
     width: 100%;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     z-index: 26;
     font-size: 19px;
 }
 
 .cards .card-name{
-	font-family: Montserrat, Lato;
 	letter-spacing: 3px;
 	margin-top: 46.5%;
-	font-weight: 600;
+	font-weight: 300;
 	font-size: 19px;
 	text-transform: capitalize;
 }
