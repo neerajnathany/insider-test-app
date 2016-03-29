@@ -22,8 +22,9 @@ jQuery(document).ready(function() {
         $(this).parent().next().fadeTo(300,0);
         $(this).parent().prev().fadeTo(300,0);
         $(this).parent().children('.page-event').delay(200).fadeTo(200,1);
+        $(this).parent().children('.card-name').hide();
+        $(this).parent().children('.half.bottom').fadeTo(300,0);
         $(this).parent().children('.answer-text').fadeTo(300,0);
-        $(this).parent().children('.card-icon').fadeTo(200,0);
         $('.icon.search').hide();
         $('.tool-bar').hide().delay(200).fadeTo(100,1);
         $('.icon.menu').addClass('backb');
@@ -35,8 +36,9 @@ jQuery(document).ready(function() {
         $('.card-page').next().fadeTo(300,0.3);
         $('.card-page').prev().fadeTo(300,0.3);
         $('.card-page').children('.page-event').fadeTo(200,0);
+        $('.card-page').children('.card-name').show();
+        $('.card-page').children('.half.bottom').fadeTo(300,1);
         $('.card-page').children('.answer-text').fadeTo(300,1);
-        $('.card-page').children('.card-icon').fadeTo(200,1);
         $('.icon.search').show();
         $('.tool-bar').hide().delay(200).fadeTo(100,1);
         $('.tool-bar').css({'background':'rgba(0,0,0,0)'});
@@ -69,7 +71,7 @@ jQuery(document).ready(function() {
 
 
     $('.comedy .right').click(function() {
-        $('.app-screen').css({'background':'#003773'});
+        $('.app-screen').css({'background':'#0761C2'});
         $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
             $(this).text("Heard it on the album?");
         }).animate({'opacity': 1}, 150);
@@ -87,7 +89,7 @@ jQuery(document).ready(function() {
         }).animate({'opacity': 1}, 150);
     });
     $('.getout .left').click(function() {
-        $('.app-screen').css({'background':'#003773'});
+        $('.app-screen').css({'background':'#0761C2'});
         $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
             $(this).text("Heard it on the album?");
         }).animate({'opacity': 1}, 150);
@@ -105,7 +107,7 @@ jQuery(document).ready(function() {
         }).animate({'opacity': 1}, 150);
     });
     $('.food .right').click(function() {
-        $('.app-screen').css({'background':'#C5A175'});
+        $('.app-screen').css({'background':'#A77F4F'});
         $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
             $(this).text("Need a new hobby?");
         }).animate({'opacity': 1}, 150);
@@ -123,7 +125,7 @@ jQuery(document).ready(function() {
         }).animate({'opacity': 1}, 150);
     });
     $('.do-home .left').click(function(){
-        $('.app-screen').css({'background':'#C5A175'});
+        $('.app-screen').css({'background':'#A77F4F'});
         $('.header-text h4').animate({'opacity': 0.3}, 150, function () {
             $(this).text("Gluttony is a sin");
         }).animate({'opacity': 1}, 150);
