@@ -325,52 +325,28 @@ table {
 }
 
 .cards::after{
-	content:"5 events";
-	position: absolute;
+	content: "5";
+    position: absolute;
     top: 280px;
     left: 0;
-	width: 100%;
-	text-align: center;
-    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    z-index: 26;
+    font-size: 18px;
 }
 
 .cards .answer-text{
     position: absolute;
-    width: 62%;
-    top: 116%;
-    left: 148px;
-    text-align: left;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 27px;
-    padding: 6px 16px;
-    font-family: Lato;
-    letter-spacing: 0.2px;
-    font-style: italic;
+    width: 100%;
+    top: 115%;
+    left: 0;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 36px;
+    padding: 0 24px;
     opacity: 0;
 
-}
-
-.cards .answer-text.monkey{
-    top: 117%;
-    left: 29px;
-    width: 137px;
-    height: 116px;
-    padding: 0;
-    background: url('assets/monkey3.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none;
-}
-
-.cards .card-icon{
-	position: absolute;
-	width: 54px;
-	height: 54px;
-	top: 50%;
-	left: 50%;
-	margin-top: -27px;
-	margin-left: -27px;
 }
 
 .half{
@@ -392,10 +368,14 @@ table {
 }
 
 .half.bottom{
-	top: 74%;
-	left: 0;
-	width: 100%;
-	height: 85px;
+	top: 78%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50px;
+    background: white;
+    box-shadow: inset 0 4px 15px -3px #191919;
 }
 
 .comedy{
@@ -410,10 +390,8 @@ table {
     box-sizing:border-box;
 }
 
-.comedy .card-icon{
-	background: url('assets/icons/art.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+.comedy .half.bottom{
+	background: #7D0B0B;
 }
 
 .music{
@@ -426,10 +404,8 @@ table {
 	transition: left 0.3s ease-in-out;
 }
 
-.music .card-icon{
-	background: url('assets/icons/devil.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+.music .half.bottom{
+	background: #003773;
 }
 
 .getout{
@@ -440,10 +416,8 @@ table {
 	transition: left 0.3s ease-in-out;
 }
 
-.getout .card-icon{
-	background: url('assets/icons/mountain.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+.getout .half.bottom{
+	background: #E6930E;
 }
 
 .food{
@@ -454,10 +428,8 @@ table {
 	transition: left 0.3s ease-in-out;
 }
 
-.food .card-icon{
-	background: url('assets/icons/cup.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+.food .half.bottom{
+	background: #852905;
 }
 
 .alcohol{
@@ -468,10 +440,8 @@ table {
 	transition: left 0.3s ease-in-out;
 }
 
-.alcohol .card-icon{
-	background: url('assets/icons/drink.png');
-	background-size: cover;
-	background-repeat: no-repeat;
+.alcohol .half.bottom{
+	background: #C5A175;
 }
 
 .do-home{
@@ -482,11 +452,6 @@ table {
 	transition: left 0.3s ease-in-out;
 }
 
-.do-home .card-icon{
-	background: url('assets/icons/sofa.png');
-	background-size: cover;
-	background-repeat: no-repeat;
-}
 
 .do-home::after{
 	content: none;
